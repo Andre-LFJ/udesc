@@ -1,1 +1,1 @@
-Trabalho que fiz para a matéria Processamento de Imagens/2022;
+Trabalhos que fiz para a matéria Processamento de Imagens/2022;
