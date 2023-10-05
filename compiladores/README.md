@@ -1,4 +1,9 @@
+Um simples compilador em Lex & Yacc que fiz como trabalho final para a matéria de compiladores;
+
+
+
 Aluno: André Luis Francisco Junior
+
 Compiladores
 
 O trabaho está no arquivo teste.g.
