@@ -1,0 +1,30 @@
+#!/bin/sh
+
+set -e
+set -x
+
+GENTLE=../gentle/gentle
+GRTS=../gentle/grts.o
+REFLEX=../reflex/reflex
+LIB=../lib
+LEX=../tools/flex/bin/flex
+YACC=../tools/bison/bin/yacc
+CC=cc
+
+$GENTLE teste.g
+
+$REFLEX
+
+$LEX gen.l
+
+$YACC gen.y
+
+$CC -o teste \
+   teste.c \
+   lex.yy.c \
+   y.tab.c \
+   $LIB/errmsg.o \
+   $LIB/main.o \
+   $GRTS
+
+teste testfile

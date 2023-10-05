@@ -1,0 +1,15 @@
+"/" { yysetpos(); return yytk_SLASH; }
+"*" { yysetpos(); return yytk_ASTERISK; }
+"!" { yysetpos(); return yytk_EXCLAM; }
+")" { yysetpos(); return yytk_RPAREN; }
+"(" { yysetpos(); return yytk_LPAREN; }
+"-" { yysetpos(); return yytk_MINUS; }
+"+" { yysetpos(); return yytk_PLUS; }
+"||" { yysetpos(); return yytk_BAR_BAR; }
+"&&" { yysetpos(); return yytk_AMPERSAND_AMPERSAND; }
+"!=" { yysetpos(); return yytk_EXCLAM_EQUAL; }
+"==" { yysetpos(); return yytk_EQUAL_EQUAL; }
+"<=" { yysetpos(); return yytk_LESS_EQUAL; }
+">=" { yysetpos(); return yytk_GREATER_EQUAL; }
+"<" { yysetpos(); return yytk_LESS; }
+">" { yysetpos(); return yytk_GREATER; }
